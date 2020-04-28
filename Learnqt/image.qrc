@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/png">
+        <file>Resources/fb_icon.png</file>
+        <file>Resources/g_icon.png</file>
+        <file>Resources/headmask_hov.png</file>
+        <file>Resources/home.png</file>
+    </qresource>
+</RCC>
