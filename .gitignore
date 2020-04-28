@@ -30,3 +30,7 @@
 *.exe
 *.out
 *.app
+/.vs/Learnqt/v15
+/build/debug
+/debug
+/Learnqt/Learnqt.vcxproj.user
