@@ -4,5 +4,8 @@
         <file>Resources/g_icon.png</file>
         <file>Resources/headmask_hov.png</file>
         <file>Resources/home.png</file>
+        <file>Resources/liuhua1.jpg</file>
+        <file>Resources/logo.png</file>
+        <file>Resources/liuhua2.gif</file>
     </qresource>
 </RCC>

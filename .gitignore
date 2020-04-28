@@ -35,3 +35,4 @@
 /debug
 /Learnqt/Learnqt.vcxproj.user
 /.vs/Learnqt/v16
+/build/release/qmake
