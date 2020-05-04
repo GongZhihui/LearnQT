@@ -24,6 +24,11 @@ ClientWidget::ClientWidget(QWidget* p)
         socket_->write(lineEdit->text().toUtf8());
         lineEdit->clear();
         });
+
+    connect(lineEdit, &QLineEdit::returnPressed, [=]() {
+        socket_->write(lineEdit->text().toUtf8());
+        lineEdit->clear();
+        });
 }
 
 bool ClientWidget::event(QEvent* ev)
