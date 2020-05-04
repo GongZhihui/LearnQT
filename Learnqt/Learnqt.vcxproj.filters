@@ -34,6 +34,15 @@
     <ClCompile Include="home.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="testwidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MyLabelWidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="QSocketTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="Learnqt.h">
@@ -42,9 +51,18 @@
     <QtMoc Include="home.h">
       <Filter>Header Files</Filter>
     </QtMoc>
+    <QtMoc Include="testwidget.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="MyLabelWidget.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
   </ItemGroup>
   <ItemGroup>
     <QtUic Include="Learnqt.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="testwidget.ui">
       <Filter>Form Files</Filter>
     </QtUic>
   </ItemGroup>
@@ -55,5 +73,10 @@
     <QtRcc Include="image.qrc">
       <Filter>Resource Files</Filter>
     </QtRcc>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="QSocketTest.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

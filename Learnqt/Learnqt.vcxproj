@@ -51,11 +51,11 @@
   </ImportGroup>
   <PropertyGroup Label="QtSettings" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <QtInstall>Qt5.12.3-x86</QtInstall>
-    <QtModules>core;gui;widgets</QtModules>
+    <QtModules>core;gui;network;printsupport;widgets</QtModules>
   </PropertyGroup>
   <PropertyGroup Label="QtSettings" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <QtInstall>Qt5.12.3-x86</QtInstall>
-    <QtModules>core;gui;widgets</QtModules>
+    <QtModules>core;gui;printsupport;widgets</QtModules>
   </PropertyGroup>
   <ImportGroup Condition="Exists('$(QtMsBuild)\qt.props')">
     <Import Project="$(QtMsBuild)\qt.props" />
@@ -91,12 +91,16 @@
     <ClCompile Include="home.cpp" />
     <ClCompile Include="Learnqt.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="MyLabelWidget.cpp" />
+    <ClCompile Include="QSocketTest.cpp" />
+    <ClCompile Include="testwidget.cpp" />
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="Learnqt.h" />
   </ItemGroup>
   <ItemGroup>
     <QtUic Include="Learnqt.ui" />
+    <QtUic Include="testwidget.ui" />
   </ItemGroup>
   <ItemGroup>
     <QtRcc Include="image.qrc" />
@@ -104,6 +108,15 @@
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="home.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="testwidget.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="MyLabelWidget.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="QSocketTest.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">
