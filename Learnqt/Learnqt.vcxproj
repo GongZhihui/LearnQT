@@ -51,7 +51,7 @@
   </ImportGroup>
   <PropertyGroup Label="QtSettings" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <QtInstall>Qt5.12.3-x86</QtInstall>
-    <QtModules>core;gui;network;printsupport;widgets</QtModules>
+    <QtModules>core;gui;network;printsupport;sql;widgets</QtModules>
   </PropertyGroup>
   <PropertyGroup Label="QtSettings" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <QtInstall>Qt5.12.3-x86</QtInstall>
@@ -93,6 +93,7 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="MyLabelWidget.cpp" />
     <ClCompile Include="QSocketTest.cpp" />
+    <ClCompile Include="sqlitemodel.cpp" />
     <ClCompile Include="testwidget.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -117,6 +118,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="QSocketTest.h" />
+    <ClInclude Include="sqlitemodel.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">

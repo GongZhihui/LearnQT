@@ -43,6 +43,9 @@
     <ClCompile Include="QSocketTest.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="sqlitemodel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="Learnqt.h">
@@ -76,6 +79,9 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="QSocketTest.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="sqlitemodel.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
