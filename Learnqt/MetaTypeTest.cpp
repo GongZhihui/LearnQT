@@ -8,6 +8,7 @@ MetaTypeTest::MetaTypeTest(const QString& n, const QString& c)
     : name(n)
     , color(c)
     , metaTypeA("typeA")
+    , pointer(std::make_shared<QString>("pointer"))
 {
 }
 
@@ -37,17 +38,25 @@ QDataStream& operator>>(QDataStream& out, MetaTypeA& info)
 
 QDataStream& operator<<(QDataStream& out, const MetaTypeTest& info)
 {
+    if (info.pointer) 
+    {
+        out << *info.pointer;
+    }
     out << info.name << info.color << info.metaTypeA;
     return out;
 }
 
 QDataStream& operator>>(QDataStream& out, MetaTypeTest& info)
 {
+    if (!info.pointer)
+        info.pointer = std::make_shared<QString>();
+    out >> *info.pointer;
     out >> info.name >> info.color >> info.metaTypeA;
     return out;
 }
 
 // 自定义类型转为QVariant，然后调用QVariant的save或者load函数保存到文件
+// 序列化指针时，实际是序列化指针指向的对象
 void test_meta_type()
 {
     // 自定义类型如果要save或load需要调用这个

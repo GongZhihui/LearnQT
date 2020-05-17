@@ -40,6 +40,7 @@ public:
 
     MetaTypeA metaTypeA;
     QString name;
+    std::shared_ptr<QString> pointer;
     QString color;
 };
 
