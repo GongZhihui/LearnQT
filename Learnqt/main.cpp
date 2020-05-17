@@ -7,19 +7,37 @@
 #include <QtSql/qsqlquery>
 #include <QFileInfo>
 #include <QtSql/qsqlerror>
+#include "MetaTypeTest.h"
+#include "reflection.h"
+#include <QString>
 
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
-    
-    /*ServerWidget sw;
+
+    //test_ReflectionObject();
+    //test_testobject();
+
+    test_meta_type();
+
+    /*HomeMW w;
+    w.show();
+
+    ServerWidget sw;
     ClientWidget cw;
     sw.show();
     cw.show();
     */
-    
+   
+    /* MetaTypeTest mt;
+    mt.color = "color";
+    mt.name = "name";
+    QVariant v;
+    v.setValue(mt);
+    auto mt1 = v.value<MetaTypeTest>();*/
 
-    SQLiteModelWidget w;
-    w.show();
+
+    //SQLiteModelWidget w;
+    //w.show();
     return a.exec();
 }

@@ -20,7 +20,23 @@ HomeMW::HomeMW(QWidget* parent)
     auto fileMenu = bar->addMenu(u8"文件");
     auto editMenu = bar->addMenu(u8"编辑");
 
+    connect(this, &HomeMW::MetaType, [=](MetaTypeTest mt) {
+        QMessageBox::information(this, "tip", mt.color, QMessageBox::Ok);
+        });
+    connect(this, &HomeMW::MetaType, [=](const MetaTypeTest &mt) {
+        QMessageBox::information(this, "tip &", mt.color, QMessageBox::Ok);
+        });
+
+
     auto saveAction = new QAction(u8"保存", this);
+    connect(saveAction, &QAction::triggered, [=]() {
+        //QMessageBox::information(this, "tip", "clicked save", QMessageBox::Ok);
+        MetaTypeTest mt{"col", "nam"};
+        emit MetaType(mt);
+        emit MetaTypeReference(mt);
+
+        });
+
 
     auto newAction = fileMenu->addAction(u8"新建");
     fileMenu->addSeparator();

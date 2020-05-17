@@ -1,4 +1,5 @@
 <RCC>
-    <qresource prefix="Learnqt">
+    <qresource prefix="/Learnqt">
+        <file>Resources/home.qml</file>
     </qresource>
 </RCC>
