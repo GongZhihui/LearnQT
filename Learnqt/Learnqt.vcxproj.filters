@@ -52,6 +52,9 @@
     <ClCompile Include="reflection.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="GraphicsViewTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="Learnqt.h">
@@ -69,12 +72,18 @@
     <QtMoc Include="reflection.h">
       <Filter>Header Files</Filter>
     </QtMoc>
+    <QtMoc Include="GraphicsViewTest.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
   </ItemGroup>
   <ItemGroup>
     <QtUic Include="Learnqt.ui">
       <Filter>Form Files</Filter>
     </QtUic>
     <QtUic Include="testwidget.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="graphics_view.ui">
       <Filter>Form Files</Filter>
     </QtUic>
   </ItemGroup>
@@ -96,5 +105,11 @@
     <ClInclude Include="MetaTypeTest.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Learnqt.rc" />
   </ItemGroup>
 </Project>

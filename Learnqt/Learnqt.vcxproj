@@ -88,6 +88,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="GraphicsViewTest.cpp" />
     <ClCompile Include="home.cpp" />
     <ClCompile Include="Learnqt.cpp" />
     <ClCompile Include="main.cpp" />
@@ -102,6 +103,7 @@
     <QtMoc Include="Learnqt.h" />
   </ItemGroup>
   <ItemGroup>
+    <QtUic Include="graphics_view.ui" />
     <QtUic Include="Learnqt.ui" />
     <QtUic Include="testwidget.ui" />
   </ItemGroup>
@@ -119,10 +121,15 @@
     <QtMoc Include="MyLabelWidget.h" />
   </ItemGroup>
   <ItemGroup>
+    <QtMoc Include="GraphicsViewTest.h" />
     <ClInclude Include="MetaTypeTest.h" />
     <ClInclude Include="QSocketTest.h" />
     <QtMoc Include="reflection.h" />
+    <ClInclude Include="resource.h" />
     <ClInclude Include="sqlitemodel.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Learnqt.rc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">

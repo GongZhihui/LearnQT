@@ -10,6 +10,7 @@
 #include "MetaTypeTest.h"
 #include "reflection.h"
 #include <QString>
+#include "GraphicsViewTest.h"
 
 int main(int argc, char *argv[])
 {
@@ -17,8 +18,9 @@ int main(int argc, char *argv[])
 
     //test_ReflectionObject();
     //test_testobject();
-
-    test_meta_type();
+    GraphicsViewTest w;
+    w.show();
+    //test_meta_type();
 
     /*HomeMW w;
     w.show();
